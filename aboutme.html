@@ -13,8 +13,8 @@
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
-      background-color: #000000;
       padding-top: 70px;
+    
   }
   h3
   {
@@ -138,7 +138,7 @@ function Hobbies() {
 }
 function Leadership() {
     var x = document.getElementById('leadership');
-    if (x.style.display === 'none') {
+    if (x.style.display !== 'none') {
         x.style.display = 'block';
         document.getElementById("button3").innerHTML="-";
     } else {
@@ -149,7 +149,7 @@ function Leadership() {
 </script>
   </head>
   
-  <body oncontextmenu="return false;">
+  <body oncontextmenu="return false;" background="images/education.jpg">
   	
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -172,29 +172,19 @@ function Leadership() {
     </div>
   </div>
 </nav>
+<div style="width: 30%;height: 100%;background-color: black;left: -70%;">
 <div>
 <button class="bu" onclick="Education()" style="width: 10px;height: 10px;background:#000000;border-collapse: 0px;border-right: 100px; " id="button1">-</button>
 <label style="color: white;border-left: 30px;font-family: Baskerville;"><h3>Education</h3></label>
 
 </div>
-<div id="education" style="color: white;">
-<table border="2" style="border-color: white;text-align: center;">
-<tr style="<text-align: center;">
-<td>Degree</td>
-<td>Year of Passing</td>
-<td>College</td>
-<td>University</td>
-<td>Percentage/CGPA</td>
-</tr>
-<tr>
-<td>Bachelor of Engineering</td>
-<td>3<sup>rd</sup> Year, Information Technology(2014-18)</td><td>Sardar Patel Institute of Technology,Andheri</td><td>University of Mumbai</td><td>8.33(Till Sem 5)</td>
-</tr>
-<tr>
-<td>Higher Secondary Certificate</td><td>March 2014</td><td>Swami Vivekanand High School and Junior College,Chembur</td><td> Maharashtra State Board</td><td>86.76%</td>
-</tr>
-<tr><td>Secondary School Certificate</td><td>March 2012</td><td>St. Augustines High School,Nerul</td><td>Maharashtra State Board</td><td>87.27%</td>
-</table>
+<div id="education" style="color: white;background-image: "images/education.jpg";">
+<ul>
+<li><b>Bachelor of Engineering</b></li>Sardar Patel Institute of Technology,Andheri<br>CGPA(Till Sem 5):8.33<br>
+<li><b>Higher Secondary Certificate</b></li>Swami Vivekanand High School and Junior College,Chembur<br>Percentage:86.76%<br>
+
+<li><b>Secondary School Certificate</b></li>St. Augustines High School,Nerul<br>Percentage:87.27%<br>
+
 
 </div>
 
@@ -220,6 +210,7 @@ function Leadership() {
 <li>Chairperson of ITSA(Information Technology Student Assosiation),a Student Committee of Sardar Patel Institute of Technology,2016-17</li>
 
 </ul>
+</div>
 </div>
 <br>
 
