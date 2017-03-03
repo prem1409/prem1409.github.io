@@ -89,7 +89,6 @@ table
   {
     border-color: #000000;
   }
-  .img
 
   </style>
   <script type="text/javascript">
@@ -117,8 +116,8 @@ function Hobbies() {
     }
 }
 function Leadership() {
-    var x = document.getElementById('leadership');
-    if (x.style.display !== 'none') {
+    var x = document.getElementById('leaderships');
+    if (x.style.display === 'none') {
         x.style.display = 'block';
         document.getElementById("button3").innerHTML="-";
     } else {
@@ -181,9 +180,9 @@ function Leadership() {
 </div>
 <div>
 <button class="bu" onclick="Leadership()" style="width: 10px;height: 10px;background:#000000;border-collapse: 0px;border-right: 100px; " id="button3">-</button>
-<label style="color:white;border-left: 30px;;font-family: Baskerville;"><h3>Position of Responsibility</h3></label>
+<label style="color:white;border-left: 30px;font-family: Baskerville;"><h3>Position of Responsibility</h3></label>
 </div>
-<div id="leadership" style="color: white;">
+<div id="leaderships" style="color: white;">
 <ul>
 <li>Executive Head,Udaan(Cultural Fest of Sardar Patel Institute of Technology),2017</li>
 <li>Head of Hospitality,Udaan(Cultural Fest of Sardar Patel Institute of Technology),2017</li>
@@ -202,5 +201,6 @@ function Leadership() {
 <a href="https://www.linkedin.com/in/prem-raheja-817271101"><img src="images/LinkedIn.png" alt="Smiley face" width="70" height="70" align="middle" hspace="20"></a>
 <a href="https://github.com/prem1409"><img src="images/github.png" alt="Smiley face" width="55" height="55" align="middle" hspace="20"></a>
 </p>
+</div>
 </body>
 </html>
