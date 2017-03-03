@@ -128,6 +128,16 @@ function Hobbies() {
         document.getElementById("button2").innerHTML="+";
     }
 }
+function Leadership() {
+    var x = document.getElementById('leadership');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+        document.getElementById("button3").innerHTML="-";
+    } else {
+        x.style.display = 'none';
+        document.getElementById("button3").innerHTML="+";
+    }
+}
 </script>
   </head>
   
@@ -156,7 +166,7 @@ function Hobbies() {
 </nav>
 <div>
 <button class="bu" onclick="Education()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button1">-</button>
-<label style="color: yellow;border-left: 30px;">Education</label>
+<label style="color: yellow;border-left: 30px;"><h3>Education</h3></label>
 
 </div>
 <div id="education" style="color: white;">
@@ -167,12 +177,26 @@ function Hobbies() {
 
 <div>
 <button class="bu" onclick="Hobbies()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button2">-</button>
-<label style="color: yellow;border-left: 30px;">Hobbies</label>
+<label style="color: yellow;border-left: 30px;"><h3>Hobbies</h3></label>
 </div>
 <div id="hobbies" style="color: white;">
 <ul>
 <li>Exploring Food Joints</li>
 <li><a href="https://drive.google.com/open?id=0B6E3wTM7m1NfcU1sM0lWcl9GSEE" style="color: white;">Photography</a>(Click on it to view some of my Clicks)</li>
 <li>Travelling</li>
+</ul>
+</div>
+<div>
+<button class="bu" onclick="Leadership()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button3">-</button>
+<label style="color: yellow;border-left: 30px;"><h3>Position of Responsibility</h3></label>
+</div>
+<div id="leadership" style="color: white;">
+<ul>
+<li>Executive Head,Udaan(Cultural Fest of Sardar Patel Institute of Technology),2017</li>
+<li>Head of Hospitality,Udaan(Cultural Fest of Sardar Patel Institute of Technology),2017</li>
+<li>Chairperson of ITSA(Information Technology Student Assosiation),a Student Committee of Sardar Patel Institute of Technology,2016-17</li>
+
+</ul>
+</div>
 </body>
 </html>
