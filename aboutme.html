@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<TITLE>ABOUT ME</TITLE>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -12,8 +12,8 @@
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
-      background-color: #4B0082;
-      
+      background-color: #2E0854;
+      padding-top: 70px;
   }
   h3
   {
@@ -95,15 +95,39 @@
   {
     height: 10px;
     color: goldenrod;
-    width: 50px;
-    align-content: center;
-    border-top: 4px solid;
+    width: 100%;
+    align-content: left;
+    border-top: 2px solid;
+  }
+  .bu
+  {
+    border-color: #2E0854;
   }
   </style>
   <script type="text/javascript">
 $(document).ready(function(){
 $('.carousel').carousel({interval: 3000});
 });
+function Education() {
+    var x = document.getElementById('education');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+        document.getElementById("button1").innerHTML="-";
+    } else {
+        x.style.display = 'none';
+        document.getElementById("button1").innerHTML="+";
+    }
+}
+function Hobbies() {
+    var x = document.getElementById('hobbies');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+        document.getElementById("button2").innerHTML="-";
+    } else {
+        x.style.display = 'none';
+        document.getElementById("button2").innerHTML="+";
+    }
+}
 </script>
   </head>
   
@@ -118,17 +142,37 @@ $('.carousel').carousel({interval: 3000});
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html" style="color: red;">PREM RAHEJA</a>
+      <a class="navbar-brand" href="index.html" style="color: red;"><b>PREM RAHEJA</b></a>
     </div>
     <div class="collapse nav navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a class="page-scroll" href="aboutme.html">ABOUT ME</a></li>
         <li><a class="page-scroll" href="project.html">PROJECTS</a></li>
-        <li><a class="page-scroll" style="{visibilty:hidden;display:none;}" href="https://drive.google.com/file/d/0B6E3wTM7m1NfcXB6QXhHZGpKM2c/view?usp=sharing">Resume</a></li>
+        <li><a class="page-scroll" style="{visibilty:hidden;display:none;}" href="https://drive.google.com/file/d/0B6E3wTM7m1NfcXB6QXhHZGpKM2c/view?usp=sharing">RESUME</a></li>
         <li><a class="page-scroll" href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<div>
+<button class="bu" onclick="Education()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button1">-</button>
+<label style="color: yellow;border-left: 30px;">Education</label>
+
+</div>
+<div id="education" style="color: white;">
+<p><b>Bachelor of Engineering </b><br>3<sup>rd</sup> Year, Information Technology(2014-18)<br>Sardar Patel Institute of Technology,Andheri<br>University of Mumbai<br>CGPA(Till Sem 5):8.33<br><hr ></p>
+<p><b>Higher Secondary Certificate</b><br>March 2014<br>Swami Vivekanand High School and Junior College,Chembur<br>Maharashtra State Board<br>Percentage:86.76%<br><hr></p>
+<p><b>Secondary School Certificate</b><br>March 2012<br>St. Augustines High School,Nerul<br>Maharashtra State Board<br>Percentage:87.27%<br></p>
+</div>
+
+<div>
+<button class="bu" onclick="Hobbies()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button2">-</button>
+<label style="color: yellow;border-left: 30px;">Hobbies</label>
+</div>
+<div id="hobbies" style="color: white;">
+<ul>
+<li>Exploring Food Joints</li>
+<li><a href="https://drive.google.com/open?id=0B6E3wTM7m1NfcU1sM0lWcl9GSEE" style="color: white;">Photography</a>(Click on it to view some of my Clicks)</li>
+<li>Travelling</li>
 </body>
 </html>
