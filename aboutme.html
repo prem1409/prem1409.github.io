@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
   <style>
   body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
-      background-color: #2E0854;
+      background-color: #000000;
       padding-top: 70px;
   }
   h3
@@ -54,7 +55,7 @@
       font-size: 15px;
       color: #ffffff;
       letter-spacing: 2px;
-      background: rgba(0, 0, 0,0.8);
+      background: rgba(0, 0, 0,1);
       
   }
  
@@ -91,18 +92,25 @@
       height: 20%;
       
   }
-  hr
+ 
+table
+{
+  text-align:center;
+}
+ hr
   {
     height: 10px;
     color: goldenrod;
-    width: 100%;
-    align-content: left;
-    border-top: 2px solid;
+    width: 50px;
+    align-content: center;
+    border-top: 4px solid;
   }
   .bu
   {
-    border-color: #2E0854;
+    border-color: #000000;
   }
+  .img
+
   </style>
   <script type="text/javascript">
 $(document).ready(function(){
@@ -152,7 +160,7 @@ function Leadership() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html" style="color: #800000;"><b>PREM RAHEJA</b></a>
+       <a class="navbar-brand" href="index.html" style="color:white;font-family:Baskerville;font-size: 25px;">PREM RAHEJA</a>
     </div>
     <div class="collapse nav navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -165,19 +173,34 @@ function Leadership() {
   </div>
 </nav>
 <div>
-<button class="bu" onclick="Education()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button1">-</button>
-<label style="color: yellow;border-left: 30px;"><h3>Education</h3></label>
+<button class="bu" onclick="Education()" style="width: 10px;height: 10px;background:#000000;border-collapse: 0px;border-right: 100px; " id="button1">-</button>
+<label style="color: white;border-left: 30px;font-family: Baskerville;"><h3>Education</h3></label>
 
 </div>
 <div id="education" style="color: white;">
-<p><b>Bachelor of Engineering </b><br>3<sup>rd</sup> Year, Information Technology(2014-18)<br>Sardar Patel Institute of Technology,Andheri<br>University of Mumbai<br>CGPA(Till Sem 5):8.33<br><hr ></p>
-<p><b>Higher Secondary Certificate</b><br>March 2014<br>Swami Vivekanand High School and Junior College,Chembur<br>Maharashtra State Board<br>Percentage:86.76%<br><hr></p>
-<p><b>Secondary School Certificate</b><br>March 2012<br>St. Augustines High School,Nerul<br>Maharashtra State Board<br>Percentage:87.27%<br></p>
+<table border="2" style="border-color: white;text-align: center;">
+<tr style="<text-align: center;">
+<td>Degree</td>
+<td>Year of Passing</td>
+<td>College</td>
+<td>University</td>
+<td>Percentage/CGPA</td>
+</tr>
+<tr>
+<td>Bachelor of Engineering</td>
+<td>3<sup>rd</sup> Year, Information Technology(2014-18)</td><td>Sardar Patel Institute of Technology,Andheri</td><td>University of Mumbai</td><td>8.33(Till Sem 5)</td>
+</tr>
+<tr>
+<td>Higher Secondary Certificate</td><td>March 2014</td><td>Swami Vivekanand High School and Junior College,Chembur</td><td> Maharashtra State Board</td><td>86.76%</td>
+</tr>
+<tr><td>Secondary School Certificate</td><td>March 2012</td><td>St. Augustines High School,Nerul</td><td>Maharashtra State Board</td><td>87.27%</td>
+</table>
+
 </div>
 
 <div>
-<button class="bu" onclick="Hobbies()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button2">-</button>
-<label style="color: yellow;border-left: 30px;"><h3>Hobbies</h3></label>
+<button class="bu" onclick="Hobbies()" style="width: 10px;height: 10px;background:#000000;border-collapse: 0px;border-right: 100px; " id="button2">-</button>
+<label style="color: white;border-left: 30px;font-family: Baskerville;"><h3>Hobbies</h3></label>
 </div>
 <div id="hobbies" style="color: white;">
 <ul>
@@ -187,8 +210,8 @@ function Leadership() {
 </ul>
 </div>
 <div>
-<button class="bu" onclick="Leadership()" style="width: 10px;height: 10px;background:#2E0854;border-collapse: 0px;border-right: 100px; " id="button3">-</button>
-<label style="color: yellow;border-left: 30px;"><h3>Position of Responsibility</h3></label>
+<button class="bu" onclick="Leadership()" style="width: 10px;height: 10px;background:#000000;border-collapse: 0px;border-right: 100px; " id="button3">-</button>
+<label style="color:white;border-left: 30px;;font-family: Baskerville;"><h3>Position of Responsibility</h3></label>
 </div>
 <div id="leadership" style="color: white;">
 <ul>
@@ -198,6 +221,7 @@ function Leadership() {
 
 </ul>
 </div>
+<br>
 
 <div id="contact" style="background-color: white;">
 <h3 align="center" style="color: black;font: Arial  " ><b><i>Let's Get in touch!</i></b></h3>
