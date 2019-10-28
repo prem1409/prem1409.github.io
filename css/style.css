@@ -1,0 +1,518 @@
+/*--
+    Common Css
+--*/
+body {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #3b4045;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin: 0px; }
+
+h1 {
+  font-size: 44px;
+  line-height: 56px; }
+
+h2 {
+  font-size: 30px;
+  line-height: 35px; }
+
+h3 {
+  font-size: 23px;
+  line-height: 25px; }
+
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400; }
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0px; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.bg-1 {
+  background-image: url(../images/contact.jpg); }
+
+.bg-opacity {
+  position: relative; }
+  .bg-opacity:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); }
+
+a:focus,
+.btn:focus,
+.btn:active:focus {
+  box-shadow: none;
+  outline: 0 none; }
+
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none; }
+
+.section {
+  padding: 100px 0; }
+
+/*--
+    custom heading
+--*/
+.text-center {
+  text-align: center; }
+
+.heading {
+  text-align: center;
+  color: #777777;
+  padding-bottom: 70px; }
+  .heading h2 {
+    color: #3c3c3c;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px; }
+  .heading p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300; }
+
+.subheading {
+  color: #3c3c3c;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px; }
+
+.btn {
+  border-radius: 0; }
+
+.btn-main {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 40px;
+  display: inline-block;
+  background-color: #f9a743;
+  -moz-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  -webkit-box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  background-image: -moz-linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+  background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%); }
+  .btn-main:hover, .btn-main:focus {
+    background-color: #f9a743;
+    color: #fff; }
+
+.btn-main-sm {
+  padding: 12px 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold; }
+
+  .fa {
+    padding: 20px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+  }
+  .fa-facebook {
+    padding: 25px;
+    
+  }
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.5;
+    color:#f9a743;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  
+  .social-icons {
+    display: inline;
+    text-align: center;
+    font-size: 2vmin
+}
+
+
+/*--
+    .hero-area start
+--*/
+.hero-area {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero-area h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 19px;
+    margin-top: 30px;
+    line-height: 1.2; }
+  .hero-area p {
+    font-size: 20px;
+    line-height: 1.3; }
+  .hero-area .btn-main {
+    margin-top: 30px; }
+
+/* .hero-area  */
+.navigation {
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  padding: 10px 50px;
+  margin: 0;
+  border: 0; }
+  .navigation .navbar-brand {
+    display: inline-block; }
+  .navigation .navbar-toggler {
+    background: #fff;
+    outline: none;
+    border-radius: 0;
+    float: right; }
+    .navigation .navbar-toggler i {
+      font-size: 22px; }
+
+.logo {
+  display: inline-block; }
+  .logo h1 {
+    color: #444;
+    font-size: 25px;
+    margin: 0;
+    line-height: 1; }
+
+.menu {
+  margin-top: 14px; }
+  .menu li {
+    display: inline-block;
+    margin: 0 10px; }
+    .menu li a {
+      color: #444;
+      font-size: 14px;
+      font-weight: bold; }
+      .menu li a:hover, .menu li a:focus {
+        background: none; }
+
+/*--
+    feature start
+--*/
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.feature.section {
+  padding-bottom: 100px; }
+
+.feature .introduction {
+  margin-bottom: 40px; }
+  .feature .feature-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: inline-block; }
+  .feature .feature-box h4 {
+    font-weight: bold;
+    margin-bottom: 8px; }
+  .feature .feature-box p {
+    line-height: 1.1; 
+    }
+  .introduction p{
+    font-size: 14px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    
+    width: 50%;}
+    .container1 h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 1.2;
+    }
+    .container1 h3{
+      font-size: 18px;
+      
+    line-height: 1.2;
+    }
+    .container1 h4{
+      font-size: 16px;
+    line-height: 1.2;
+    }
+    .container1 ul{
+      font-size: 14px;
+    line-height: 1.2;
+    }
+  /* The circles on the timeline */
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    
+  }
+  
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+
+    
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+    
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -12px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #f9a743;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container1 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container1::before {
+      left: 60px;
+      border: medium solid white;
+      
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+.skills {
+  background: #f9a743;
+ }
+  .skills h2 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-align: left; }
+  .skills p {
+    color: #fff;
+    font-size: 18px; }
+  .skills ul{
+    color: #fff;
+    font-size: 18px;
+  }
+
+/*--
+    Feature-list start
+--*/
+.feature-list .btn-main {
+  margin-top: 15px; }
+.project-container {
+  padding-left: 70px;
+  padding-right: 25px;
+  background-color: #f9a743;
+}
+.project-container h2 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  font-size: 20px;
+  text-align: left; }
+.project-container p {
+  color: #fff;
+  font-size: 14px; }
+.project-container ul{
+  color: #fff;
+  font-size: 14px;
+}
+
+/*--
+    contact start
+--*/
+
+  
+    .contact .block .input-group input {
+      height: 50px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border: none;
+  
+      box-shadow: none; }
+      
+    .contact .form-control{
+        border-radius:1rem;
+    }
+    .contact-image{
+        text-align: center;
+    }
+   
+   
+    .contact h3{
+
+        text-align: center;
+        color:#f9a743;
+    }
+    .contact .btnContact {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        
+        background: #dc3545;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+    .btnContactSubmit
+    {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        color: #fff;
+        background-color: #0062cc;
+        border: none;
+        cursor: pointer;
+    }
+footer {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 50px 0px; }
+  footer .footer-logo {
+    color: #555; }
+  footer p.copyright-text {
+    font-weight: 300;
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 3px;
+    margin-top: 15px; }
+    footer p.copyright-text a {
+      color: #282828; }
+      footer p.copyright-text a:hover {
+        text-decoration: none; }
