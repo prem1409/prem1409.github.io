@@ -31,22 +31,24 @@
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <!-- Responsive Stylesheet -->
             <link rel="stylesheet" href="css/responsive.css">
+            
         </head>
 
-        <body id="body">
+        <body id="particle_background">
+                
             <!-- 
             Header start
             ==================== -->
             <div class="container">
                 <nav class="navbar navigation " id="top-nav">
                     <a class="navbar-brand logo" href="#">
-                        <h1>Prem Raheja</h1>
+
                     </a>
 
                 <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
                     <i class="tf-ion-android-menu"></i>
                 </button>
-                <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <div class="collapse navbar-toggleable-md navbar-fixed-top" id="navbarResponsive">
                     <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
                     <li class=" active">
                         <a href="#">HOME</a>
@@ -71,21 +73,20 @@
                 </nav>
             </div>
             
-
+            <div id="particles-js" style="height: 100%;"></div>        
             <section class="hero-area">
-                <div class="container">
-                    
+                
+                <div class="container" >
+                        
                     <div class="row">
-                        <div class="col-md-6 text-center">
-                                <img src="images/background.png" alt="" height="120%" width="120%" >
-                        </div>
-                        <div class="col-md-6">
+                            
+                        <div style="text-align:center;">
                             <div class="block">
-                                <h2 style="padding-left: 20%;">Hello, World;</h2>
+                                <h2 >Hello, World;</h2>
                                 <b><h1 id="my_name" style="color: #f9a743;align-content: center; ">I</h1></b>
-                                <p style="padding-left: 25%;"><a class="btn btn-main" href="#about" role="button" style="scroll-padding-left: 20%;">More About Me</a></p>
+                                <p ><a class="btn btn-main" href="#about" role="button" style="scroll-padding-left: 20%;">More About Me</a></p>
                                 <br><br>
-                                <ul class="social-icons" style="padding-left: 20%;">
+                                <ul class="social-icons" >
                                         <li class="social-icons"> <a class="social-icons" href="mailto:raheja.prem1996@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
                                         <li class="social-icons"> <a class="social-icons" href="https://www.facebook.com/prem.raheja.5" target="_blank"><i class="fa fa-facebook "></i></a> </li>                                
                                         <li class="social-icons"> <a class="social-icons" href="https://linkedin.com/in/premraheja" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
@@ -99,7 +100,7 @@
             </div>
             </section><!-- header close -->
 
-
+            <br><br><br>
             <!-- 
             Feature start
             ==================== -->
@@ -112,14 +113,14 @@
                             <h2>About</h2>
                         </div>
                         <div class="col-md-8">
-                            <div class="introduction">                            
+                            <div class="introduction" style="padding-left: 2vw;padding-right: 2vw;">                            
                                 
                                 <p>I am a person who has great enthusiasm of learning and with an aim to create and develop new things. I'm a student at the University of Alberta currently pursuing Masters in Computer Science Specialization in Multimedia. My areas of focus are Artificial Intelligence in Multimedia, Image and Video Processing and Computer Vision. I have prior experience in building RESTful APIs, Designing an Architecture, Building up a Database Management System.I curiously hunt for technological aspects and proficiency and would love to work on multi-dimensional and cutting-edge projects, given the chance.</p>
                                 <br>
                                 <p>Inquisitive by nature, I like exploring new things. Being a Foodie, exploring food joints is one of them. I love to capture moments so that I can cherish them later. I consider myself to be an earth child,dog admirer, a happy and social ambivert,open minded and in some way a spiritual weirdo. </p>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center" style="padding-right: 2vw;padding-left: 2vw;">
                             <img src="images/Photo.jpg" alt="" height="100%" width="100%" >
                         </div>
                         </div>
@@ -226,15 +227,15 @@
                 </section><!-- #service close -->
             
             <section class="skills section" id="skills">
-                <div class="container">
+                <div class="container" >
                     <div class="row" >                   
-                        <div class="col-md-6" >      
-                                <div class="row" >                   
+                        <div class="col-md-6"  >      
+                                <div class="row" style="padding-left: 3vw;padding-right: 3vw;" >                   
                                 <h2 class="subheading">Skills</h2>
                                 <p>Python/MySql, Database Management, Android/Firebase, Coding skills/Standards, Programming Logic, Testing, Project management skills. Cloud Platform - GCP</p>                                                    
                                 </div>
                                 <br><br><br>
-                                <div class="row" >                   
+                                <div class="row"style="padding-left: 3vw;padding-right: 3vw;" >                   
                                 <h2 class="subheading">Courses</h2>
                                 <ul style="list-style-type:disc; ">
                                     <li>Master in Computer Science <br><p style="font-size: 14px;">Artificial Intelligence, Image and Video Processing, Virtual Reality and Tele-Presence, Multimedia Communication, Computer Vision, Game Development</p></li><br>
@@ -243,7 +244,7 @@
                                 </ul>                                                    
                                 </div>
                         </div>
-                        <div class="col-md-6">                        
+                        <div class="col-md-6" style="padding-left: 3vw;padding-right: 3vw;">                        
                             <ul class="skills" style="font-size: 16px;">
                             <li>Python
                                 <div class="w3-light-grey w3-round-xlarge">
@@ -388,28 +389,27 @@
                                 <h3>I'd love to hear from you!</h3>
                             
 
-                                <div class="row ">
+                                <div class="row " >
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-4" >
                     
-                                        <div class="icon" style="align-content: center;">
-                                            <i class="fa fa-map-marker" style="font-size:48px;color:#f9a743"></i>
+                                        <div class="icon" style="text-align: center;display: block;" >
+                                            <i class="fa fa-map-marker" style="font-size:48px;color:#f9a743;padding-left: 0;padding-right: 0;"></i>
                                         </div>
-                                        <h5>Where to find me</h5>
-                                        <p>
-                                            11439, 80th Ave NW,
-                                            <br>Edmonton, Canada T6G 0R6.
+                                        <h5 style="align-items: center;text-align: center">Where to find me</h5>
+                                        <p style="text-align: center">
+                                        Edmonton, Canada
                                         </p>
                                     </div>
                     
                                     <div class="col-md-4">
                     
-                                        <div class="icon">
-                                            <i class="fa fa-envelope" style="font-size:48px;color:#f9a743"></i>
+                                        <div class="icon" style="text-align: center;display: block;" >
+                                            <i class="fa fa-envelope" style="font-size:48px;color:#f9a743;padding-left: 0;padding-right: 0;"></i>
                                         </div>
                     
-                                        <h5>Email Me At</h5>
-                                        <p>
+                                        <h5 style="text-align: center">Email Me At</h5>
+                                        <p style="text-align: center">
                                             <a href="mailto:raheja.prem1996@gmail.com"
                                                 class="color-888888">raheja.prem1996@gmail.com</a>
                                         </p>
@@ -417,11 +417,11 @@
                                     </div>
                     
                                     <div class="col-md-4">
-                                        <div class="icon">
-                                            <i class="fa fa-phone" style="font-size:48px;color:#f9a743"></i>
+                                        <div class="icon" style="text-align: center;display: block;" >
+                                            <i class="fa fa-phone" style="font-size:48px;color:#f9a743;padding-left: 0;padding-right: 0;"></i>
                                         </div>
-                                        <h5>Call Me At</h5>
-                                        <p>
+                                        <h5 style="text-align: center">Call Me At</h5>
+                                        <p style="text-align: center">
                                             Phone:
                                             <a href="tel:+18733394497" class="color-888888">(+1)
                                                 873 339 4497</a>
@@ -494,5 +494,7 @@
             }
         }, 300);
         </script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
         </body>
     </html>
