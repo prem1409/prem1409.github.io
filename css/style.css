@@ -177,14 +177,14 @@ a:active {
   justify-content: center;
   align-items: center; }
   .hero-area h1 {
-    font-size: 6vw;
+    font-size: 50px;
     font-weight: bold;
     padding-bottom: 19px;
-    margin-top: 30px;
+    margin-top: 20px;
     line-height: 1.2; 
     text-align: center;}
     .hero-area h2 {
-      font-size: 3vw;
+      font-size: 30px;
       text-align: center;
       font-weight: bold;
       margin-top: 30px;
