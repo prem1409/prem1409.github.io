@@ -200,7 +200,7 @@ a:active {
 
 /* .hero-area  */
 .navigation {
-  background-color: transparent;
+  background-color: #ffffff;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -ms-transition: all 0.3s ease-in-out 0s;
@@ -330,7 +330,7 @@ a:active {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -13px;
     background-color: white;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -420,7 +420,8 @@ a:active {
   
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 12px;
+    right: 12px
     }
   
   /* Make all right containers behave like the left ones */
@@ -445,6 +446,43 @@ a:active {
     font-size: 18px;
   }
 
+  .about {
+    background: #f9a743;
+   }
+    .about h2 {
+      color: #fff;
+      font-weight: 3em;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+      text-align: left; }
+    .about p {
+      color: #fff;
+      font-size: 18px; }
+    .about ul{
+      color: #fff;
+      font-size: 18px;
+    }
+    .dot {
+      height: 0.7em;
+      width: 0.7em;
+      border-radius: 50%;
+      display: inline-block;
+      margin-left: 0.2em;
+    }
+
+  .terminal-heading{
+  border-radius:  0.4em 0.4em 0em 0em;
+  background: #d2d2d2;
+  margin:auto;
+  width:80% ; 
+  height:1.3em;
+  }
+  .terminal{
+    border-radius: 0em 0em 0.4em 0.4em ;
+    background: #000;
+    margin:auto;
+    width:80% ; 
+    }
 /*--
     Feature-list start
 --*/
@@ -469,7 +507,20 @@ a:active {
   color: #fff;
   font-size: 14px;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
 
+.card:hover {
+  box-shadow: 0 16px 16px 16px rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
+  background-color:#d4d4d4
+}
 /*--
     contact start
 --*/
@@ -484,7 +535,7 @@ a:active {
       box-shadow: none; }
       
     .contact .form-control{
-        border-radius:1rem;
+        border-radius:1em;
     }
     .contact-image{
         text-align: center;
@@ -499,7 +550,7 @@ a:active {
     .contact .btnContact {
         width: 50%;
         border: none;
-        border-radius: 1rem;
+        border-radius: 1em;
         
         background: #dc3545;
         font-weight: 600;
@@ -509,7 +560,7 @@ a:active {
     .btnContactSubmit
     {
         width: 50%;
-        border-radius: 1rem;
+        border-radius: 1em;
         padding: 1.5%;
         color: #fff;
         background-color: #0062cc;
